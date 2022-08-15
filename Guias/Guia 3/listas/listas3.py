@@ -1,8 +1,5 @@
 """3. Escribe un programa que permita crear una lista de palabras y que, a continuación, pida dos palabras y sustituya la primera (que debe estar en la lista) por la segunda. Emitir la lista."""
 
-from gettext import find
-
-
 def main():
 
     array = []
