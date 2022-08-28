@@ -14,18 +14,13 @@ def main():
     grupo2 = [30, 29, 49, 48, 100, 48, 38, 45, 20, 30]
     rango = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 
-    y = grupo1
-    z = grupo2
-
     plt.figure()
-    plt.scatter(grupo1, y, label = 'Grupo 1', c='red')
-    plt.scatter(grupo2, z, label = 'Grupo 2', c='green')
-    #plt.scatter((grupo1, y),s=100,c='red',label='grupo 1')
-    #plt.scatter(x[5:],y[5:],s=100,c='green',label='grupo 2')
-    plt.xlabel('Experiencia en años')
-    plt.ylabel('Ingresos obtenidos')
+    plt.scatter(rango, grupo1, label = 'Grupo 1', c='red')
+    plt.scatter(rango, grupo2, label = 'Grupo 2', c='green')
+    plt.xlabel('Rango')
+    plt.ylabel('Calificaciones')
     plt.title('Calificaciones')
-    plt.legend(loc=2,frameon=False,title='Leyenda')
+    plt.legend(loc="lower left",title='Leyenda', bbox_to_anchor=(0.8,1.0))
 
     plt.show()
 

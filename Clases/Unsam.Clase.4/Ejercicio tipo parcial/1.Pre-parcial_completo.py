@@ -69,7 +69,7 @@ def set_tenis(diccio_tenis):
     return tenis
 
 tenis = set_tenis(diccio_tenis)
-print(tenis)
+print(f'-_->{tenis}')
 
 # También tengo que convertir tuplas y listas a set
 # paso a set la lista
