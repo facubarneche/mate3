@@ -22,6 +22,12 @@ from matplotlib import pyplot as plt
 def main():
     plt.figure('Ejercicio 8 conjunto')
 
+    U = 80
+    pyg = 20
+    gym = 10
+    pym = 8
+    todos = 5
+
     diagram = venn3((1, 1, 1, 1, 1, 1, 1), set_labels=(
     "Perro", "Gato", "Otra"), set_colors=("#FFFFFF", "#FFFFFF", "#FFFFFF"))
 
@@ -30,13 +36,13 @@ def main():
         diagram.get_label_by_id(subset).set_fontsize(16)
     c = venn3_circles(subsets=(1, 1, 1, 1, 1, 1, 1), color="#000000", alpha=0.5, linewidth=3)
 
-    diagram.get_label_by_id('100').set_text('a')
-    diagram.get_label_by_id('010').set_text('b')
-    diagram.get_label_by_id('001').set_text('c')
-    diagram.get_label_by_id('110').set_text('20')
-    diagram.get_label_by_id('011').set_text('10')
-    diagram.get_label_by_id('101').set_text('8')
-    diagram.get_label_by_id('111').set_text('5')
+    diagram.get_label_by_id('100').set_text('perro')
+    diagram.get_label_by_id('010').set_text(42 - (pyg + gym + todos))
+    diagram.get_label_by_id('001').set_text('otros')
+    diagram.get_label_by_id('110').set_text(pyg)
+    diagram.get_label_by_id('011').set_text(gym)
+    diagram.get_label_by_id('101').set_text(pym)
+    diagram.get_label_by_id('111').set_text(todos)
 
     plt.show()
 if __name__ == '__main__':
