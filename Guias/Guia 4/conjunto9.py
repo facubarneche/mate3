@@ -13,6 +13,7 @@ def main():
     cole_subte = 800
     moto = 400
     subte = 1950
+    cole = 1500
 
     diagram = venn3((1, 1, 1, 1, 1, 1, 1), set_labels=(
     "Colectivo", "Moto", "Subte"), set_colors=("#FFFFFF", "#FFFFFF", "#FFFFFF"))
@@ -22,7 +23,7 @@ def main():
         diagram.get_label_by_id(subset).set_fontsize(16)
     c = venn3_circles(subsets=(1, 1, 1, 1, 1, 1, 1), color="#000000", alpha=0.5, linewidth=3)
 
-    diagram.get_label_by_id('100').set_text(U - (moto + subte))
+    diagram.get_label_by_id('100').set_text(cole - cole_subte)
     diagram.get_label_by_id('010').set_text(moto)
     diagram.get_label_by_id('001').set_text(subte - cole_subte)
     diagram.get_label_by_id('110').set_text(0)
