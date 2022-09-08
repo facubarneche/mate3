@@ -47,6 +47,10 @@ def main():
     #b. El número de familias que tienen hijos solo en dos niveles
     print(f'El numero de familias que tienen hijos solo en 2 niveles son: {only2(BM) + only2(MU) + only2(BU)}')
 
+    #################################################################################
+    # Gráfico de resultados
+    #################################################################################
+    
     diagram = venn3((1, 1, 1, 1, 1, 1, 1), set_labels=(
     "Basica", "Media", "Universitaria"), set_colors=("#FFFFFF", "#FFFFFF", "#FFFFFF"))
 
@@ -66,8 +70,6 @@ def main():
     plt.text(0.50, -0.65, s='', size=14)
 
     plt.show()
-
-
 
 if __name__ == '__main__':
     main()
