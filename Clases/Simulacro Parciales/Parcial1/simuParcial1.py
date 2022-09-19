@@ -61,18 +61,30 @@ print(f'tenis => {setTenis} de tipo {type(setTenis)}')
 # Resuelvo
 ##################################################################################
 
-def all(sport1, sport2, sport3):
+def all(sport1, sport2, sport3):                    #Funcion para la interseccion de los 3 deportes
     return sport1 & sport2 & sport3
 #FinDef
 
-
-def only2(sport1, sport2):
+def only2(sport1, sport2):                          #Funcion para obtener interseccion de 2 deportes
     return (sport1 & sport2) - futbol_squash_tenis
 #FinDef
 
-def only1(sport1, sport2, sport3):
+def only1(sport1, sport2, sport3):                  #Funcion para obtener los que hacen solo 1 deporte
     return (sport1 - sport2) & (sport1 - sport3)
 #FinDef
+
+def pregunta4(sport1, sport2):                      #Funcion para responder futbol o tenis
+    suma = 0
+    sport1_sport2 = sport1 | sport2
+    
+    for cant in sport1_sport2:
+        suma += cant
+    
+    return suma
+#FinDef
+
+futbol_o_tenis = pregunta4(setFutbol, setTenis)
+
 
 #Agrego a variables los valores buscados
 futbol_squash_tenis = all(setFutbol, setSquash, setTenis)   #La interseccion de los 3 deportes
@@ -156,7 +168,7 @@ plt.text(-1.10, -0.50,
                    fc=(1.0, 0.9, 0.8),))
 
 plt.text(-1.10, -0.60,
-         s="Entrenan tenis o fútbol = " + str(setFutbol | setTenis),
+         s="Entrenan tenis o fútbol = " + str(futbol_o_tenis),
          size=8,
          ha="left",  # alineación horizontal
          va="bottom",  # alineación vertical
