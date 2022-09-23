@@ -1,4 +1,3 @@
-from functools import total_ordering
 from matplotlib import pyplot as plt
 from matplotlib_venn import venn3, venn3_circles
 

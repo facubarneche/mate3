@@ -7,7 +7,7 @@ def main():
     for i in range(5):
         array.append(input(f"Ingrese la palabra {i + 1}: "))
 
-    reverse_array = array.copy()
+    reverse_array = array.copy().reverse()
     reverse_array.reverse()
 
     print(list(array))
