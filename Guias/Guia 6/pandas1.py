@@ -3,18 +3,29 @@
 """
 
 import pandas as pd
+import numpy as np
 
 def main():
 
-    years = int(input('Ingrese la cantidad de años: '))
-    info = []
+    #Setea el formato de float a 2 decimales
+    pd.options.display.float_format = '${:,.2f}'.format
 
-    for i in range(years):
-        new_data = int(input(f'Ingrese el valor {i + 1}: '))
-        info.append(new_data) 
+    #Forma un rango desde el ingreso hasta el egreso por ej: (2002, 2020) 2019 + 1
+    years_range = range(int(input('Ingrese desde que año: ')), int(input('Hasta que año: ')) + 1)
+    
+    #Crea una lista de numeros randoms de low a high, con un tamaño igual al rango anterior
+    data = np.random.uniform(low=0, high=99999.99, size=(len(years_range)))
 
-    s = pd.Series(info)
-    print(s)
+   # id = pd.date_range(start=datetime.date(years_range[0],1,1), periods=len(years_range), freq='AS')
+    
+    #Transformo el array de randoms en una serie
+    serie = pd.Series(data, index=years_range)
+    print(f'\nPandas serie sin descuento: \n{serie}')
+
+    #Le resto el 10% de descuento
+    serieDescuento = serie - serie * 0.1
+
+    print(f'\nPandas serie con descuento: \n{serieDescuento}')
 
 if __name__ == '__main__':
     main()

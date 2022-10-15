@@ -1,0 +1,25 @@
+id,nombre,codigo
+1,Ciudad Autónoma de Buenos Aires (CABA),AR-C
+2,Buenos Aires,AR-B
+3,Catamarca,AR-K
+4,Córdoba,AR-X
+5,Corrientes,AR-W
+6,Entre Ríos,AR-E
+7,Jujuy,AR-Y
+8,Mendoza,AR-M
+9,La Rioja,AR-F
+10,Salta,AR-A
+11,San Juan,AR-J
+12,San Luis,AR-D
+13,Santa Fe,AR-S
+14,Santiago del Estero,AR-G
+15,Tucumán,AR-T
+16,Chaco,AR-H
+17,Chubut,AR-U
+18,Formosa,AR-P
+19,Misiones,AR-N
+20,Neuquén,AR-Q
+21,La Pampa,AR-L
+22,Río Negro,AR-R
+23,Santa Cruz,AR-Z
+24,Tierra del Fuego,AR-V

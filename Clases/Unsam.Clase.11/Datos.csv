@@ -1,0 +1,11 @@
+Pais,Edad,Salario,Compro
+Brasil,44,72000,No
+Argentina,27,48000,Si
+Chile,30,54000,No
+Argentina,38,61000,No
+Chile,40,,Si
+Brasil,35,58000,Si
+Argentina,,52000,No
+Brasil,48,79000,Si
+Chile,50,83000,No
+Brasil,37,67000,Si
