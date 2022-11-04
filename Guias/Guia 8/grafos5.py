@@ -22,7 +22,7 @@ def main():
     G.add_weighted_edges_from([('A','B',20), ('A','F',34), ('A','I',45), ('B','C',20), ('B','F',10), ('B','I',26), ('C','D',28), ('C','I',22), ('D','G',18), ('D','H',19), ('D','I',13), ('E','F',22), ('E','G',12), ('E','H',25), ('F','G',30), ('F','I',12), ('G','H',16), ('G','I',14), ('H','I',32)])
 
     #Posiciones
-    pos = nx.random_layout(G)
+    pos = nx.shell_layout(G)
     
     #Labels pesos
     labels = nx.get_edge_attributes(G, 'weight')
